@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Himoya DLP Security Suite</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+    h1 { font-size: 22px; margin-bottom: 4px; }
+    h2 { font-size: 17px; margin-top: 28px; margin-bottom: 6px; }
+    p  { margin: 8px 0; }
+    ul { margin: 8px 0 8px 24px; padding: 0; }
+    li { margin-bottom: 4px; }
+    .meta { color: #666; font-size: 13px; margin-bottom: 32px; }
+    hr { border: none; border-top: 1px solid #ddd; margin: 32px 0; }
+  </style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta">
+  App: <strong>Himoya – DLP Security Suite</strong><br>
+  Last updated: June 18, 2025<br>
+  Platforms: Android (Google Play) · iOS (App Store)
+</p>
+
+<h2>1. Introduction</h2>
+<p>
+  This Privacy Policy explains how Himoya – DLP Security Suite ("we", "our", or "the app")
+  collects, uses, and protects information when you use our mobile application.
+  By downloading or using the app, you agree to this policy.
+</p>
+
+<h2>2. Information We Collect</h2>
+
+<p><strong>Account information</strong></p>
+<ul>
+  <li>Email address – for login and notifications</li>
+  <li>Password – stored in encrypted form only (Firebase Auth)</li>
+  <li>Display name – optional, for profile purposes</li>
+</ul>
+
+<p><strong>Device information</strong></p>
+<ul>
+  <li>Device identifier – for license management</li>
+  <li>OS version – for compatibility checks</li>
+  <li>App version – for troubleshooting</li>
+  <li>FCM token – for push notifications</li>
+</ul>
+
+<p><strong>Scan data</strong></p>
+<ul>
+  <li>File metadata (name, size, type) – for threat analysis only</li>
+  <li>File hash (MD5/SHA256) – sent to VirusTotal for cloud verification (Pro tier)</li>
+  <li>Wi-Fi network info (SSID, signal strength) – for security analysis (Pro tier)</li>
+  <li>Scan history – stored for 7 days (Free), 30 days (Pro), 90 days (Enterprise)</li>
+</ul>
+
+<p><strong>What we never collect</strong></p>
+<ul>
+  <li>File contents (documents, images, videos)</li>
+  <li>Messages or SMS</li>
+  <li>Contacts</li>
+  <li>Location (GPS)</li>
+  <li>Financial or banking information</li>
+</ul>
+
+<h2>3. How We Use Information</h2>
+<p>Collected data is used only for:</p>
+<ul>
+  <li>Detecting malicious files using YARA rules and VirusTotal</li>
+  <li>Sending security alerts via Firebase Cloud Messaging</li>
+  <li>Displaying personal scan statistics</li>
+  <li>Improving app performance</li>
+  <li>Managing Pro and Enterprise licenses</li>
+</ul>
+<p>We do not sell or rent user data to third parties for advertising.</p>
+
+<h2>4. Data Storage and Security</h2>
+<ul>
+  <li>All data is stored on Google Cloud (Firebase) infrastructure with encryption at rest</li>
+  <li>All network connections use TLS/HTTPS encryption</li>
+  <li>Pro activation is handled exclusively by server-side Cloud Functions – client-side modification is not possible</li>
+  <li>Only the file hash is sent to VirusTotal – the actual file is never uploaded</li>
+</ul>
+
+<h2>5. Third-Party Services</h2>
+<ul>
+  <li><strong>Firebase (Google)</strong> – authentication, database, cloud functions, push notifications.
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li><strong>VirusTotal</strong> – file hash verification.
+    <a href="https://www.virustotal.com/gui/privacy-policy">VirusTotal Privacy Policy</a></li>
+  <li><strong>Google Mobile Ads</strong> – ads shown on the Free tier (uses advertising ID).</li>
+</ul>
+
+<h2>6. Android Permissions</h2>
+<ul>
+  <li><code>READ_EXTERNAL_STORAGE</code> – required for file scanning</li>
+  <li><code>INTERNET</code> – required for Firebase and VirusTotal</li>
+  <li><code>ACCESS_WIFI_STATE</code> – Wi-Fi security analysis (Pro)</li>
+  <li><code>CHANGE_WIFI_STATE</code> – Evil Twin detection (Pro)</li>
+  <li><code>RECEIVE_BOOT_COMPLETED</code> – background monitoring (Pro)</li>
+  <li><code>POST_NOTIFICATIONS</code> – security alerts (optional)</li>
+</ul>
+
+<h2>7. Children's Privacy</h2>
+<p>
+  The app is not directed at children under the age of 13. We do not knowingly collect
+  personal information from children under 13. If you believe a child has provided us
+  with personal data, please contact us and we will delete it immediately.
+  This complies with COPPA and Google Play / App Store children's privacy requirements.
+</p>
+
+<h2>8. Data Retention</h2>
+<ul>
+  <li>Account data – retained until the account is deleted</li>
+  <li>Scan history – 7 days (Free), 30 days (Pro), 90 days (Enterprise)</li>
+  <li>VirusTotal cache – 7 days</li>
+  <li>FCM token – until device is removed from account</li>
+</ul>
+
+<h2>9. User Rights</h2>
+<p>You have the right to:</p>
+<ul>
+  <li>Access your personal data</li>
+  <li>Edit your profile information within the app</li>
+  <li>Delete your account and all associated data</li>
+  <li>Opt out of notifications</li>
+  <li>Request a data export</li>
+</ul>
+<p>To exercise these rights, contact us at <a href="mailto:privacy@himoya.uz">privacy@himoya.uz</a>. Requests are processed within 30 days.</p>
+
+<h2>10. International Data Transfer</h2>
+<p>
+  Your data is stored on Firebase servers located primarily in the United States and Europe.
+  Transfers are governed by Google's Standard Contractual Clauses (SCC) and applicable data protection laws.
+</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>
+  We may update this policy from time to time. When we do, we will notify users via in-app
+  notification and email. Continued use of the app after changes constitutes acceptance of the updated policy.
+</p>
+
+<h2>12. Contact</h2>
+<ul>
+  <li>Privacy matters: <a href="mailto:privacy@himoya.uz">privacy@himoya.uz</a></li>
+  <li>Support: <a href="mailto:support@himoya.uz">support@himoya.uz</a></li>
+  <li>Website: <a href="https://himoya.uz">himoya.uz</a></li>
+</ul>
+
+<hr>
+<p style="color:#888; font-size:13px;">© 2025 Himoya – DLP Security Suite. All rights reserved.</p>
+
+</body>
+</html>
